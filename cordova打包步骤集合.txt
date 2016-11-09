@@ -1,31 +1,31 @@
-1.ÕÆÉÏ½ğÍøÓ¦ÓÃ°üÃû£ºcom.eteng.GNE
-2.°Ù¶ÈµØÍ¼µÄkey:  cwaVpFA2bx0iFAlRyXEZtGKf(²»Í¬µÄÓ¦ÓÃ°üÃûĞèÒª²»Í¬µÄKEY)
-     ·ÃÎÊÓ¦ÓÃAK£º cwaVpFA2bx0iFAlRyXEZtGKf
-3.Ìí¼ÓµÄ²å¼ş  £º 			£¨×¢:ÔÚÌí¼Ócordova²å¼şÊ±¿ÉÄÜ»á±¨³ö404ÇëÇó²»µ½×ÊÔ´£¬Ô­ÒòÊÇÖ´ĞĞÌí¼Ó²å¼şµÄÃüÁîÊÊÓÃÓÚÀÏ°æ±¾µÄcordova;
-						½â¾ö°ì·¨Ö±½ÓÓÃÒÔÏÂÍøÖ·ÖĞµÄÃüÁîÌí¼Ó²å¼şhttp://cordova.apache.org/plugins/?platforms=cordova-android£©
-		1.°æ±¾¸üĞÂĞèÒªµÄËÄ¸ö²å¼ş
-		cordova plugin add cordova-open      µÍ°æ±¾cordova°æ±¾¸üĞÂ¿ÉÄÜĞèÒª¼Ó<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+1.æŒä¸Šé‡‘ç½‘åº”ç”¨åŒ…åï¼šcom.eteng.GNE
+2.ç™¾åº¦åœ°å›¾çš„key:  cwaVpFA2bx0iFAlRyXEZtGKf(ä¸åŒçš„åº”ç”¨åŒ…åéœ€è¦ä¸åŒçš„KEY)
+     è®¿é—®åº”ç”¨AKï¼š cwaVpFA2bx0iFAlRyXEZtGKf
+3.æ·»åŠ çš„æ’ä»¶  ï¼š ï¼ˆæ³¨:åœ¨æ·»åŠ cordovaæ’ä»¶æ—¶å¯èƒ½ä¼šæŠ¥å‡º404è¯·æ±‚ä¸åˆ°èµ„æºï¼ŒåŸå› æ˜¯æ‰§è¡Œæ·»åŠ æ’ä»¶çš„å‘½ä»¤é€‚ç”¨äºè€ç‰ˆæœ¬çš„cordova;
+		è§£å†³åŠæ³•ç›´æ¥ç”¨ä»¥ä¸‹ç½‘å€ä¸­çš„å‘½ä»¤æ·»åŠ æ’ä»¶http://cordova.apache.org/plugins/?platforms=cordova-androidï¼‰
+		1.ç‰ˆæœ¬æ›´æ–°éœ€è¦çš„å››ä¸ªæ’ä»¶
+		cordova plugin add cordova-open     
 		cordova plugin add cordova-plugin-app-version
 		cordova plugin add cordova-plugin-device
 		cordova plugin add https://github.com/JrontEnd/cordova-plugin-download-manager
-		2.ÉÏ´«ÎÄ¼şµÄ²å¼ş
+		2.ä¸Šä¼ æ–‡ä»¶çš„æ’ä»¶
 		cordova plugin add cordova-plugin-file
 		cordova plugin add cordova-plugin-file-transfer
 		cordova plugin add cordova-plugin-camera
-		3.°Ù¶ÈµØÍ¼µÄ²å¼ş
+		3.ç™¾åº¦åœ°å›¾çš„æ’ä»¶
 		cordova plugin add https://github.com/ETENG-OSP/cordova-plugin-baidu-geolocation.git --variable API_KEY=cwaVpFA2bx0iFAlRyXEZtGKf --save
-		4.Ìí¼ÓÉÁÆÁ²å¼şµÄ
+		4.æ·»åŠ é—ªå±æ’ä»¶çš„
 		cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
-                5.¼æÈİĞÔ²å¼ş
+                5.å…¼å®¹æ€§æ’ä»¶
                  cordova plugin add https://github.com/JrontEnd/cordova-plugin-crosswalk-webview.git --variable XWALK_MODE="shared" --variable XWALK_APK_URL="http://vis-apps.oss-cn-qingdao.aliyuncs.com/plugin%2FCrosswalk.apk"
 		
-		6.Ìí¼ÓÉÁÆÁµÄÔÚ´ò³öÓ¦ÓÃµÄcofig.xmlÖĞÌí¼Ó
+		6.æ·»åŠ é—ªå±çš„åœ¨æ‰“å‡ºåº”ç”¨çš„cofig.xmlä¸­æ·»åŠ 
 		<preference name="SplashScreen" value="splash" />
         	<preference name="SplashScreenDelay" value="6000" />
-		 ×¢Òâ£ºµÚÒ»¸övalueµÄÃû³ÆºÍÉÁÆÁµÄÍ¼Æ¬Ãû³ÆÒ»ÖÂ
-	     	 µÚ¶ş¸övalue±íÊ¾ÉÁÆÁµÄÊ±¼ä
+		 æ³¨æ„ï¼šç¬¬ä¸€ä¸ªvalueçš„åç§°å’Œé—ªå±çš„å›¾ç‰‡åç§°ä¸€è‡´
+	     	 ç¬¬äºŒä¸ªvalueè¡¨ç¤ºé—ªå±çš„æ—¶é—´
 	
- 		ÉÁÆÁcobfig.xmlÖĞÌí¼Ó£¨»ù±¾ÉÏÖ»ÓĞÉÁÆÁ²å¼şĞèÒªÔÚconfigÖĞÌí¼ÓÏÂÃæ¼¸¾ä»°£¬ÆäÓà²å¼şÔÚ°²×°Ê±×Ô¶¯¼ÓÈë£©
+ 		é—ªå±cobfig.xmlä¸­æ·»åŠ ï¼ˆåŸºæœ¬ä¸Šåªæœ‰é—ªå±æ’ä»¶éœ€è¦åœ¨configä¸­æ·»åŠ ä¸‹é¢å‡ å¥è¯ï¼Œå…¶ä½™æ’ä»¶åœ¨å®‰è£…æ—¶è‡ªåŠ¨åŠ å…¥ï¼‰
 
  		<preference name="SplashScreen" value="splash" />
  
@@ -40,39 +40,35 @@
  		<preference name="SplashMaintainAspectRatio" value="true" />
   
  		<preference name="SplashShowOnlyFirstTime" value="false" />
-		7.ÌÚÑ¶ĞÅ¸ë²å¼ş£¨http://xg.qq.com/xg/apps/ctr_app/index£©´Ë´¦µÄACCESS_IDºÍACCESS_KEYÊÇÌÚÑ¶ĞÅ¸ëÓ¦ÓÃÅäÖÃÖĞµÄ
+		7.è…¾è®¯ä¿¡é¸½æ’ä»¶ï¼ˆhttp://xg.qq.com/xg/apps/ctr_app/indexï¼‰æ­¤å¤„çš„ACCESS_IDå’ŒACCESS_KEYæ˜¯è…¾è®¯ä¿¡é¸½åº”ç”¨é…ç½®ä¸­çš„
 		cordova plugin add https://github.com/ETENG-OSP/xgpush-cordova --save --variable ACCESS_ID="2100199010" --variable ACCESS_KEY="A7FS253XSX5W"
-
-   
-		8.Ó¦ÓÃµÄÇ©ÃûÃÜÂë£º000000
-  		Ç©ÃûµÄÎÄ¼şÂ·¾¶£ºÔÚÎÄ¼şÖĞ£¨ÀÏ°æµÄÕÆÉÏ½ğÍøµÄÇ©Ãû£©
-  		ĞÂµÄanfroid.keystore ÃÜÂë£º0325xu
+		8.åº”ç”¨çš„ç­¾åå¯†ç ï¼š000000
+  		ç­¾åçš„æ–‡ä»¶è·¯å¾„ï¼šåœ¨æ–‡ä»¶ä¸­ï¼ˆè€ç‰ˆçš„æŒä¸Šé‡‘ç½‘çš„ç­¾åï¼‰
+  		æ–°çš„anfroid.keystore å¯†ç ï¼š0325xu
 		
-		9.ĞÂ°æ¹È¸è¿çÓò
-		ÓÒ»÷ÊôĞÔÔÚ Ä¿±ê µØÖ·ºó¼Ó-args --disable-web-security 
-		-args --disable-web-security --user-data-dir(ĞÂ°æ¹È¸è¿çÓò)
-		ubuntuÆô¶¯¿çÓòºóµÄ¹È¸è:
+		9.æ–°ç‰ˆè°·æ­Œè·¨åŸŸ
+		å³å‡»å±æ€§åœ¨ ç›®æ ‡ åœ°å€ååŠ -args --disable-web-security 
+		-args --disable-web-security --user-data-dir(æ–°ç‰ˆè°·æ­Œè·¨åŸŸ)
+		ubuntuå¯åŠ¨è·¨åŸŸåçš„è°·æ­Œ:
 		google-chrome --disable-web-security
-		10.ÏîÄ¿ÖĞµÄ²å¼şÉı¼¶
+		10.é¡¹ç›®ä¸­çš„æ’ä»¶å‡çº§
 		npm install -g cordova-check-plugins
 		cordova-check-plugins --update=auto --force-update
 
-´ò°üÇ°ĞŞ¸Ä£º
-	1.Ò³ÃæµÄÌø×ªÂ·¾¶
-	2.Ó¦ÓÃµÄÃû³Æ
-	3.¸úĞÂĞÂµÄ°æ±¾ºÅ
+æ‰“åŒ…å‰ä¿®æ”¹ï¼š
+	1.é¡µé¢çš„è·³è½¬è·¯å¾„
+	2.åº”ç”¨çš„åç§°
+	3.è·Ÿæ–°æ–°çš„ç‰ˆæœ¬å·
 
-
-
-´ò°ü²½Öè£º  1.´´½¨cordova»·¾³ cordova create  cordovaProject com.eteng.GNE  gne  
-	    2.½øÈëÎÄ¼ş¼ĞÏÂÖ´ĞĞ cordova platform add android
-	    3.½øÈëÏîÄ¿ÔËĞĞ»·¾³ÏÂÖ´ĞĞ  grunt build £¨±£Ö¤ÏîÄ¿ÎŞ´íÎó£©
-	    4.ÕÒµ½ÔËĞĞ»·¾³ÏÂµÄdistÎÄ¼ş ¸´ÖÆÏÂµÄdistËùÓĞÎÄ¼ş ¸´ÖÆµ½cordovaÏÂµÄwwwÎÄ¼şÏÂ£¨ÒªÏÈÉ¾³ıwwwÏÂËùÓĞµÄÎÄ¼ş£©
-	    5.ÔÚcordovaÎÄ¼şÕÒµ½config.xml£¬ĞŞ¸Ä<content src="index.html "/>ÔÚºóÃæÌí¼Ó#/ºÍÂ·ÓÉ
-	      ÉèÖÃµÇÂ½Ìø×ªµÄÊ×Ò³  Èç<content src="index.html#/title/login "/>
-              ²¹³äµÚÎåµã:Ìí¼ÓÉÁÆÁ²å¼şĞèÒªÔÚcordovaÏîÄ¿ÏÂµÄconfign.xmlÖĞ¼ÓÈë
+æ‰“åŒ…æ­¥éª¤ï¼š  1.åˆ›å»ºcordovaç¯å¢ƒ cordova create  cordovaProject com.eteng.GNE  gne  
+	    2.è¿›å…¥æ–‡ä»¶å¤¹ä¸‹æ‰§è¡Œ cordova platform add android
+	    3.è¿›å…¥é¡¹ç›®è¿è¡Œç¯å¢ƒä¸‹æ‰§è¡Œ  grunt build ï¼ˆä¿è¯é¡¹ç›®æ— é”™è¯¯ï¼‰
+	    4.æ‰¾åˆ°è¿è¡Œç¯å¢ƒä¸‹çš„distæ–‡ä»¶ å¤åˆ¶ä¸‹çš„distæ‰€æœ‰æ–‡ä»¶ å¤åˆ¶åˆ°cordovaä¸‹çš„wwwæ–‡ä»¶ä¸‹ï¼ˆè¦å…ˆåˆ é™¤wwwä¸‹æ‰€æœ‰çš„æ–‡ä»¶ï¼‰
+	    5.åœ¨cordovaæ–‡ä»¶æ‰¾åˆ°config.xmlï¼Œä¿®æ”¹<content src="index.html "/>åœ¨åé¢æ·»åŠ #/å’Œè·¯ç”±
+	      è®¾ç½®ç™»é™†è·³è½¬çš„é¦–é¡µ  å¦‚<content src="index.html#/title/login "/>
+              è¡¥å……ç¬¬äº”ç‚¹:æ·»åŠ é—ªå±æ’ä»¶éœ€è¦åœ¨cordovaé¡¹ç›®ä¸‹çš„confign.xmlä¸­åŠ å…¥
 		<preference name="SplashScreen" value="splash" />
- splashÊÇÉÁÆÁÍ¼Æ¬µÄÃû³Æ
+ splashæ˜¯é—ªå±å›¾ç‰‡çš„åç§°
  		<preference name="SplashScreenDelay" value="10000" />
     
  		<preference name="FadeSplashScreen" value="false" />
@@ -84,31 +80,22 @@
  		<preference name="SplashMaintainAspectRatio" value="true" />
   
  		<preference name="SplashShowOnlyFirstTime" value="false" />
-	    6.ÔÚcordovaÎÄ¼şµÄconfig.xmlÖĞĞŞ¸ÄÓ¦ÓÃµÄÃû³Æ  ÀıÈç<name>jinwang</name>  ¸ÄÎª <name>ÕÆÉÏ½ğÍø</name>
-	    7.cmdÔËĞĞcordovaÔÚcordovaÏîÄ¿ÖĞÌí¼Ó²å¼ş
-	    8.ÔÚstatic-builderÖĞÖ´ĞĞgrunt build
-            9.ÔÚcordovaÖĞÉ¾³ıwwwÎÄ¼ş¼Ğcmd½øÈëcordovaProject Ö´ĞĞmklink www /j "D:\phoneWork\jinwang\static-html-builder\dist"´´½¨Á¬½Ó Ö®ºóÃ¿´ÎµÄgrunt build¶¼²»ÔÙ½«distÎÄ¼ş¼ĞÎÄ¼ş¿½±´µ½wwwÎÄ¼ş¼ĞÏÂÃæ£¨Ìæ»»µÚ4²½£©
-            10.ÔÚD:\cordovaProject\platforms\android\resÎÄ¼ş¼ĞÖĞÌæ»»ËùÓĞµÄÍ¼Æ¬ »»³ÉÉÁÆÁºÍÓ¦ÓÃÍ¼Æ¬
-            11.cmd½øÈëcordovaProject,Èç¹ûÏë²âÊÔÓÃÖ±½Ócorodva build¼´¿É³öÀ´²âÊÔÓÃµÄapk
-         ×¢:(cordova build --releaseÖ´ĞĞ´ËÃüÁîÊ±Éú³ÉµÄdebug°ü°²×°ÔÚÊÖ»úÉÏ»á±¨³ö½âÎö°ü³ö´í£¬´ËÃüÁîÓÃÓÚ´òÕıÊ½°ü)
-             Ö´ĞĞÍêcordvoa build --releaseÃüÁîºóÒª¼ÓÉÏÇ©Ãû²ÅÄÜÓÃ 
-	   
+	    6.åœ¨cordovaæ–‡ä»¶çš„config.xmlä¸­ä¿®æ”¹åº”ç”¨çš„åç§°  ä¾‹å¦‚<name>jinwang</name>  æ”¹ä¸º <name>æŒä¸Šé‡‘ç½‘</name>
+	    7.cmdè¿è¡Œcordovaåœ¨cordovaé¡¹ç›®ä¸­æ·»åŠ æ’ä»¶
+	    8.åœ¨static-builderä¸­æ‰§è¡Œgrunt build
+            9.åœ¨cordovaä¸­åˆ é™¤wwwæ–‡ä»¶å¤¹cmdè¿›å…¥cordovaProject æ‰§è¡Œmklink www /j "D:\phoneWork\jinwang\static-html-builder\dist"åˆ›å»ºè¿æ¥ ä¹‹åæ¯æ¬¡çš„grunt buildéƒ½ä¸å†å°†distæ–‡ä»¶å¤¹æ–‡ä»¶æ‹·è´åˆ°wwwæ–‡ä»¶å¤¹ä¸‹é¢ï¼ˆæ›¿æ¢ç¬¬4æ­¥ï¼‰
+            10.åœ¨D:\cordovaProject\platforms\android\resæ–‡ä»¶å¤¹ä¸­æ›¿æ¢æ‰€æœ‰çš„å›¾ç‰‡ æ¢æˆé—ªå±å’Œåº”ç”¨å›¾ç‰‡
+            11.cmdè¿›å…¥cordovaProject,å¦‚æœæƒ³æµ‹è¯•ç”¨ç›´æ¥corodva buildå³å¯å‡ºæ¥æµ‹è¯•ç”¨çš„apk
+         æ³¨:(cordova build --releaseæ‰§è¡Œæ­¤å‘½ä»¤æ—¶ç”Ÿæˆçš„debugåŒ…å®‰è£…åœ¨æ‰‹æœºä¸Šä¼šæŠ¥å‡ºè§£æåŒ…å‡ºé”™ï¼Œæ­¤å‘½ä»¤ç”¨äºæ‰“æ­£å¼åŒ…)
+             æ‰§è¡Œå®Œcordvoa build --releaseå‘½ä»¤åè¦åŠ ä¸Šç­¾åæ‰èƒ½ç”¨
 
-
-cordova ¸ü¸Äcordova platform android ²½Öè£º
-
-
-É¾³ıcordovaÖĞµÄAndroid°æ±¾£º 
-
-	cordova platform rm android
-
-Ìí¼ÓÖ¸¶¨µÄcordovaµÄAndroid°æ±¾ 
-
-	cordova platform add android@5.1.1   °²×°ÆäËû°æ±¾ ÔòÌæ»»ÎªÖ¸¶¨°æ±¾¼´¿É(android-22 android@4.1.1)
-
-ÌØ±ğ×¢Òâ£ºµ±cordova build Ê± ³öÏÖJVMÎŞ×ã¹»µÄ¿Õ¼äÊ±Ö´ĞĞ½øÈëÄãµÄjreÄ¿Â¼¼´Program Files\Java\jre7\bin£¬ÕÒµ½java.exe=¡·ÓÒ¼ü=¡·ÊôĞÔ-¡·¼æÈİĞÔ£¬Ñ¡ÔñÒÔ¹ÜÀíÔ±Éí·İÔËĞĞ¼´¿É¡£
-
-ÏµÍ³»·¾³±äÁ¿ÖĞĞÂ½¨GRADLE_OPTS£¬ÖµÎª-Dorg.gradle.jvmargs=-Xmx512m
-
+cordova æ›´æ”¹cordova platform android æ­¥éª¤ï¼š
+        åˆ é™¤cordovaä¸­çš„Androidç‰ˆæœ¬ï¼š cordova platform rm android
+	æ·»åŠ æŒ‡å®šçš„cordovaçš„Androidç‰ˆæœ¬ 
+	cordova platform add android@5.1.1   å®‰è£…å…¶ä»–ç‰ˆæœ¬ åˆ™æ›¿æ¢ä¸ºæŒ‡å®šç‰ˆæœ¬å³å¯(android-22 android@4.1.1)
+ç‰¹åˆ«æ³¨æ„ï¼šå½“cordova build æ—¶ å‡ºç°JVMæ— è¶³å¤Ÿçš„ç©ºé—´æ—¶ï¼Œå¯ä»¥æ‰§è¡Œä¸‹è¿°æ–¹æ³•
+        ç³»ç»Ÿç¯å¢ƒå˜é‡ä¸­æ–°å»ºGRADLE_OPTSï¼Œå€¼ä¸º-Dorg.gradle.jvmargs=-Xmx512m
+è‹¥éœ€è¦åŠ å…¥pouchdbæ—¶ï¼Œåˆ™å…ˆå°†å‰å°è¿è¡Œç¯å¢ƒä¸­çš„pouchdbæ–‡ä»¶å¤¹å¤åˆ¶åˆ°æ‰“åŒ…ç”¨çš„æ–‡ä»¶å¤¹cordovaProjectä¸­ï¼Œä¹‹ååœ¨config.xmlæ–‡ä»¶ä¸­åŠ å…¥
+ <script src="bower_components/pouchdb/dist/pouchdb.min.js" />å³å¯
 
 
