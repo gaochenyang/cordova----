@@ -1,0 +1,114 @@
+1.掌上金网应用包名：com.eteng.GNE
+2.百度地图的key:  cwaVpFA2bx0iFAlRyXEZtGKf(不同的应用包名需要不同的KEY)
+     访问应用AK： cwaVpFA2bx0iFAlRyXEZtGKf
+3.添加的插件  ： 			（注:在添加cordova插件时可能会报出404请求不到资源，原因是执行添加插件的命令适用于老版本的cordova;
+						解决办法直接用以下网址中的命令添加插件http://cordova.apache.org/plugins/?platforms=cordova-android）
+		1.版本更新需要的四个插件
+		cordova plugin add cordova-open      低版本cordova版本更新可能需要加<preference name="AndroidPersistentFileLocation" value="Compatibility" />
+		cordova plugin add cordova-plugin-app-version
+		cordova plugin add cordova-plugin-device
+		cordova plugin add https://github.com/JrontEnd/cordova-plugin-download-manager
+		2.上传文件的插件
+		cordova plugin add cordova-plugin-file
+		cordova plugin add cordova-plugin-file-transfer
+		cordova plugin add cordova-plugin-camera
+		3.百度地图的插件
+		cordova plugin add https://github.com/ETENG-OSP/cordova-plugin-baidu-geolocation.git --variable API_KEY=cwaVpFA2bx0iFAlRyXEZtGKf --save
+		4.添加闪屏插件的
+		cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
+                5.兼容性插件
+                 cordova plugin add https://github.com/JrontEnd/cordova-plugin-crosswalk-webview.git --variable XWALK_MODE="shared" --variable XWALK_APK_URL="http://vis-apps.oss-cn-qingdao.aliyuncs.com/plugin%2FCrosswalk.apk"
+		
+		6.添加闪屏的在打出应用的cofig.xml中添加
+		<preference name="SplashScreen" value="splash" />
+        	<preference name="SplashScreenDelay" value="6000" />
+		 注意：第一个value的名称和闪屏的图片名称一致
+	     	 第二个value表示闪屏的时间
+	
+ 		闪屏cobfig.xml中添加（基本上只有闪屏插件需要在config中添加下面几句话，其余插件在安装时自动加入）
+
+ 		<preference name="SplashScreen" value="splash" />
+ 
+ 		<preference name="SplashScreenDelay" value="10000" />
+    
+ 		<preference name="FadeSplashScreen" value="false" />
+      
+ 		<preference name="ShowSplashScreenSpinner" value="false" />
+   
+ 		<preference name="FadeSplashScreenDuration" value="8000" />
+  
+ 		<preference name="SplashMaintainAspectRatio" value="true" />
+  
+ 		<preference name="SplashShowOnlyFirstTime" value="false" />
+		7.腾讯信鸽插件（http://xg.qq.com/xg/apps/ctr_app/index）此处的ACCESS_ID和ACCESS_KEY是腾讯信鸽应用配置中的
+		cordova plugin add https://github.com/ETENG-OSP/xgpush-cordova --save --variable ACCESS_ID="2100199010" --variable ACCESS_KEY="A7FS253XSX5W"
+
+   
+		8.应用的签名密码：000000
+  		签名的文件路径：在文件中（老版的掌上金网的签名）
+  		新的anfroid.keystore 密码：0325xu
+		
+		9.新版谷歌跨域
+		右击属性在 目标 地址后加-args --disable-web-security 
+		-args --disable-web-security --user-data-dir(新版谷歌跨域)
+		ubuntu启动跨域后的谷歌:
+		google-chrome --disable-web-security
+		10.项目中的插件升级
+		npm install -g cordova-check-plugins
+		cordova-check-plugins --update=auto --force-update
+
+打包前修改：
+	1.页面的跳转路径
+	2.应用的名称
+	3.跟新新的版本号
+
+
+
+打包步骤：  1.创建cordova环境 cordova create  cordovaProject com.eteng.GNE  gne  
+	    2.进入文件夹下执行 cordova platform add android
+	    3.进入项目运行环境下执行  grunt build （保证项目无错误）
+	    4.找到运行环境下的dist文件 复制下的dist所有文件 复制到cordova下的www文件下（要先删除www下所有的文件）
+	    5.在cordova文件找到config.xml，修改<content src="index.html "/>在后面添加#/和路由
+	      设置登陆跳转的首页  如<content src="index.html#/title/login "/>
+              补充第五点:添加闪屏插件需要在cordova项目下的confign.xml中加入
+		<preference name="SplashScreen" value="splash" />
+ splash是闪屏图片的名称
+ 		<preference name="SplashScreenDelay" value="10000" />
+    
+ 		<preference name="FadeSplashScreen" value="false" />
+      
+ 		<preference name="ShowSplashScreenSpinner" value="false" />
+   
+ 		<preference name="FadeSplashScreenDuration" value="8000" />
+  
+ 		<preference name="SplashMaintainAspectRatio" value="true" />
+  
+ 		<preference name="SplashShowOnlyFirstTime" value="false" />
+	    6.在cordova文件的config.xml中修改应用的名称  例如<name>jinwang</name>  改为 <name>掌上金网</name>
+	    7.cmd运行cordova在cordova项目中添加插件
+	    8.在static-builder中执行grunt build
+            9.在cordova中删除www文件夹cmd进入cordovaProject 执行mklink www /j "D:\phoneWork\jinwang\static-html-builder\dist"创建连接 之后每次的grunt build都不再将dist文件夹文件拷贝到www文件夹下面（替换第4步）
+            10.在D:\cordovaProject\platforms\android\res文件夹中替换所有的图片 换成闪屏和应用图片
+            11.cmd进入cordovaProject,如果想测试用直接corodva build即可出来测试用的apk
+         注:(cordova build --release执行此命令时生成的debug包安装在手机上会报出解析包出错，此命令用于打正式包)
+             执行完cordvoa build --release命令后要加上签名才能用 
+	   
+
+
+cordova 更改cordova platform android 步骤：
+
+
+删除cordova中的Android版本： 
+
+	cordova platform rm android
+
+添加指定的cordova的Android版本 
+
+	cordova platform add android@5.1.1   安装其他版本 则替换为指定版本即可(android-22 android@4.1.1)
+
+特别注意：当cordova build 时 出现JVM无足够的空间时执行进入你的jre目录即Program Files\Java\jre7\bin，找到java.exe=》右键=》属性-》兼容性，选择以管理员身份运行即可。
+
+系统环境变量中新建GRADLE_OPTS，值为-Dorg.gradle.jvmargs=-Xmx512m
+
+
+
